@@ -15,6 +15,50 @@
                 </body>
             </html>
 -->
+<!-- Ahead in this documents the following style code is explained. See Exercise 4. -->
+<style>
+
+    span {
+        text-decoration: underline;
+    }
+
+    .class-name {
+        color: red;
+    }
+
+    #id-name {
+        color: blue;
+        text-decoration: bold; 
+    }
+
+    .ranger-div {
+        width: 50%;
+        height: 100px;
+    }
+
+    #red-ranger {
+        background-color: red;
+    }
+
+    #blue-ranger {
+        background-color: blue;
+    }
+
+    #black-ranger {
+        background-color: black;
+        text-decoration-color: white;
+    }
+
+    #yellow-ranger {
+        background-color: yellow;
+    }
+
+    #pink-ranger {
+        background-color: pink;
+    }
+
+</style>
+
 <!-- Do not forget to close the head before opening the body -->
   </head>
 
@@ -83,7 +127,9 @@ The HTML link element defines a link between a document and an external resource
 Also, links allow us to go from one page to another page, internal or external. Anchor links allow you to go from one PART of the SAME page to another.
 The HTML button element represents a clickable element, a button.
 -->
-  
+
+<h4> Example of things we have seen so far:</h4>
+
 <h1>Finding Firulais</h1>
 <br>
 <img src="https://archive.org/download/6-fcc-5-d-19-0734-46-c-1-a-34-f-fc-1508357-a-16/6FCC5D19-0734-46C1-A34F-FC1508357A16.jpeg", width="200"px, height="200"px>
@@ -108,6 +154,8 @@ A link to the band's website.
 The top 5 favorite songs by them in an ordered list.
 Two or more types of text formatting.-->
 
+<h4>Exercise 1:</h4>
+
 <h1><center><blink>Imagine Dragons</center></blink></h1>
 <br>
 <center><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71SSQ3hSgEL._SX522_.jpg", width="230" height="300"></center>
@@ -130,7 +178,7 @@ Two or more types of text formatting.-->
 </ol>
 <br>
 <!-- In HTML elements can be sibillings, child, parent, grandchild, grandparents and so on depending on their relation to another element-->
-
+<h4> Example of a comment within a p element:</h4>
 <!-- Comments in HTML can be inline or multi-line, HTML is very friendly with those with no previous experience. But comments can also be added within an element, but I do not like using it like that -->
  <p>Example of a <!-- COMMENT HERE --> comment in the middle of a paragraph. It will not be shown in the body.</p>
 
@@ -149,11 +197,103 @@ One paragraph with at least 2 sentences.
 Include at least one link in the text (like a link to Wiki article for Miyamoto or one of the games he created)
 Make sure the link opens on a new browser tab when the link is clicked.
 -->
-
+<h4>Exercise 2:</h4>
 <center><h1>Biography</h1></center>
 <center><a href="https://en.wikipedia.org/wiki/Shigeru_Miyamoto"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Shigeru_Miyamoto_20150610_%28cropped%29.jpg/220px-Shigeru_Miyamoto_20150610_%28cropped%29.jpg", alt="Portrait of Shigeru Miyamoto", height="300"px, width="190"px></a></center>
 <p><a href="https://en.wikipedia.org/wiki/Shigeru_Miyamoto", target="_blank">Shigeru Miyamoto</a> (Japanese: 宮本 茂, Hepburn: Miyamoto Shigeru, born November 16, 1952) is a Japanese video game designer, producer and game director at Nintendo, where he serves as one of its representative directors. Widely regarded as one of the most accomplished and influential designers in the history of video games, he is the creator of some of the most acclaimed and best-selling game franchises of all time, including Mario, The Legend of Zelda, Donkey Kong, Star Fox and Pikmin.</p>
 <br>
+
+<!-- Now lets review class and id tags/elements
+!! They are both used to label elements, but they are not the same:
+    1 An element can have multiple class elements, but only one id.
+    2 And id must be unique, a class can be repeated.
+    3 Both id and class values are to be lower case and, if needed separation a dash "-" should be used
+    4 Ids can be used to link a part of a text, hence the uniqueness. For this instead of a http link we will use a # followed by the id value
+
+!! Lets explore the div element
+    1. The div element is used to create different sections for a website
+    2. It is common to use class and id when opening a division
+    
+!! EXERCISE 3
+
+Lorem Ipsum is commonly used as placeholder content to better visualize how a web page's text should look on the final copy. Let's hone our newly learned skills!
+
+1. Add a top-level <h1> header element that says "Draft Title".
+2. Add two <a> anchor elements.
+    2.1 One link should contain text that says "Heading 1" and the other "Heading 2".
+    2.2 Give each link an href attribute with a value of #heading-x.
+3. Underneath, create two <div> elements with a class value of "section".
+    3.1 Each <div> should contain a <h2> header element and two <p> paragraph elements.
+    3.2 The headers should have a class of "heading" and an id of #heading-x.
+    3.3. Each paragraph should contain the following placeholder text:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+-->
+<h4>Exercise 3:</h4>
+
+<h1>Draft Title</h1>
+<a href="#heading-1">Heading 1</a>
+<br>
+<a href="#heading-2">Heading 2</a>
+
+    <div class="section">
+        <h2 class="heading" id="heading-1"></h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+<br>
+    <div class="section">
+        <h2 class="heading" id="heading-2"></h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+
+<!-- Lets start putting more style in our HTML
+    While we can style each part individually, it is much easier to give certain class or id of elements the same formatting style.
+    We can add that in the header directly, or use a CSS file for that, but for now lets add in HTML code, in the header part.
+
+    It would go like:
+
+<style>
+
+    span {
+        text-decoration: underline;
+    }
+
+    .class-name {
+        color: red;
+    }
+
+    #id-name {
+        color: blue;
+        text-decoration: bold; 
+    }
+
+</style>
+
+Later we would refer to those elements in the body, for example: -->
+<h4>Example of formatting using style tag in head: </h4>
+<p>
+      Roses are <span id="id-name">red</span>.<br>
+      Violets are <span class="class-name">blue</span>.<br>
+</p>
+<br>
+<!--!! EXERCISE 4
+
+1. Copy/paste the following in the <body> element:
+<div class="ranger-div" id="red-ranger"></div>
+<div class="ranger-div" id="blue-ranger"></div>
+<div class="ranger-div" id="black-ranger"></div>
+<div class="ranger-div" id="yellow-ranger"></div>
+<div class="ranger-div" id="pink-ranger"></div>
+2. Insert a <style> element in the <head>. Then, apply the following styles in the <style> element:
+    A width of 50% and height of 100px for <div> divider elements with the ranger-div class.
+    A different background-color for each <div> divider element based on their id.
+-->
+<h4>Exercise 4: </h4>
+<div class="ranger-div" id="red-ranger"></div>
+<div class="ranger-div" id="blue-ranger"></div>
+<div class="ranger-div" id="black-ranger"></div>
+<div class="ranger-div" id="yellow-ranger"></div>
+<div class="ranger-div" id="pink-ranger"></div>
+
 
 <!-- Do not forget to close the body! -->
 </body>
